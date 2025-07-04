@@ -37,19 +37,19 @@ const Sidebar = ({ selectedTab, setSelectedTab }) => {
           </li>
           <li
             onClick={() => {
-              setSelectedTab("Create");
+              setSelectedTab("Create Post");
             }}
           >
             <a
               href="#"
               className={`nav-link text-white ${
-                selectedTab === "Create" && "active"
+                selectedTab === "Create Post" && "active"
               }`}
             >
               <svg className="bi pe-none me-2" width="16" height="16">
                 <use xlinkHref="#speedometer2"></use>
               </svg>
-              Create
+              Create Post
             </a>
           </li>
         </ul>
@@ -61,7 +61,8 @@ const Sidebar = ({ selectedTab, setSelectedTab }) => {
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            <strong>mdo</strong>
+            
+            
           </a>
           <ul className="dropdown-menu dropdown-menu-dark text-small shadow">
             <li>
